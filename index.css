@@ -1,0 +1,78 @@
+@font-face {
+    font-family: LemonMilk;
+    src: url("src/lemonmilk.otf") format("opentype");
+}
+
+body {
+	background: black;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: yellow;
+}
+
+::selection {
+  background-color: rgba(225,127,230,0.3);
+}
+
+.title {
+	font-family: arial;
+	font-size: 50px;
+	color: white;
+	margin-top: 50px;
+}
+
+.coloredtxt {
+	background-image: url("src/newbg.png");
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 500px 500px;
+	font-family: LemonMilk;
+}
+
+.text {
+	font-family: arial;
+	font-size: 30px;
+	color: white;
+}
+
+#wobble {
+	display: inline-block;
+	color: red;
+}
+
+.section {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: solid 1px;
+	border-color: rgb(55 55 55 / 30%);
+	display: inline-block;
+	padding: 2px;
+}
+
+.simg {
+	filter: blur(4px) grayscale(100%);
+  	-webkit-filter: blur(4px) grayscale(100%);
+  	transition-duration: 0.3s;
+}
+
+.simg:hover {
+	filter: blur(0px) grayscale(0%);
+  	-webkit-filter: blur(0px) grayscale(0%);
+}
+
+.icon {
+	color: white;
+	font-size: 48px;
+	margin-right: 8px;
+}
+
+.discord {
+	transition-duration: 0.2s;
+}
+.discord:hover {
+	color: rgb(114, 137, 218);
+}
+
+.secret {
+	color: black;
+}
