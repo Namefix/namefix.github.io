@@ -1,0 +1,218 @@
+@font-face {
+    font-family: LemonMilk;
+    src: url("./img/lemonmilk-bold.otf");
+}
+
+body {
+    background-color: #101010;
+}
+
+span {
+    color: white;
+    font-family: "Poppins";
+}
+
+a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.projects-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.socials-box {
+    display: flex;
+    gap: 12px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-top: 8px;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+.logo:hover {
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-family: LemonMilk;
+    font-weight: bolder;
+    font-size: 36px;
+
+    color: #f25fff;
+    background: -webkit-linear-gradient(0deg, #f25fff, #c906ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-desc {
+    color: #503050;
+    font-size: 30px;
+}
+
+.logo-desc-container {
+    position: relative;
+    height: 40px; /* adjust height as needed */
+}
+
+.logo-desc-container .logo-desc {
+    position: absolute;
+    width: max-content;
+    transform: translate(-50%, 0);
+}
+
+.logo-desc-container .logo-desc * {
+    display: inline-block;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.logo-desc-container .logo-desc:first-child * {
+    color: #e41cbf;
+    z-index: 1;
+}
+.logo-desc-container .logo-desc:last-child * {
+    color: #b300ff;
+    z-index: 0;
+}
+
+.link-icon {
+    color: white;
+    font-size: 48px;
+    margin-top: 32px;
+}
+
+.title-projects {
+    color: white;
+    font-size: 34px;
+    margin-top: 16px;
+}
+
+/* PROJECT */
+
+.project-entry {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, #2d2d2d, #212121);
+    width: min(80%, 850px);
+    border-radius: 12px;
+}
+
+.project-image {
+    width: 128px;
+    height: 128px;
+    border-radius: 12px;
+    align-self: center;
+}
+
+.project-textbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    color: rgb(233, 233, 233);
+    font-weight: bolder;
+    margin-top: 4px;
+    margin-left: 12px;
+    margin-right: 4px;
+    font-size: 28px;
+}
+
+.project-desc {
+    color: rgb(192, 192, 192);
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: contents; /* allows the children to keep their structure */
+}
+
+.project-properties {
+    display: flex;
+    gap: 6px;
+    margin-top: auto;
+    margin-bottom: 4px;
+    margin-left: 12px;
+}
+
+.project-property-entry {
+    color: white;
+    font-family: "Poppins";
+    font-weight: bold;
+    border-radius: 4px;    
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: rgba(255, 255, 255, 0.689);
+    border: solid 1px rgb(255, 255, 255); 
+}
+
+/* COLORS */
+.color-java {
+    background-color: rgba(255, 146, 4, 0.689);
+    border-color: rgb(255, 146, 4); 
+}
+
+.color-javascript {
+    background-color: rgba(226, 255, 4, 0.689);
+    border-color: rgb(226, 255, 4); 
+}
+
+.color-cpp {
+    background-color: rgba(4, 113, 255, 0.689);
+    border-color: rgb(4, 113, 255); 
+}
+
+.color-minecraft {
+    background-color: rgba(0, 255, 0, 0.689);
+    border-color: rgb(0, 255, 0);
+}
+
+.color-discordjs {
+    background-color: rgb(88, 101, 242);
+    border-color: rgb(88, 101, 242, 0.689);
+}
+
+.color-socketio {
+    color: black;
+    background-color: rgb(192, 192, 192);
+    border-color: rgb(192, 192, 192, 0.689);
+}
+
+.color-sfml {
+    background-color: rgb(156, 222, 72);
+    border-color: rgb(156, 222, 72, 0.689);
+}
+
+.footer-text {
+    color: #555;
+}
