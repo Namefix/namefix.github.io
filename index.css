@@ -57,7 +57,7 @@ a {
 }
 
 .logo:hover {
-    border-radius: 50%;
+    opacity: 0.7;
 }
 
 .logo-text {
@@ -79,7 +79,7 @@ a {
 
 .logo-desc-container {
     position: relative;
-    height: 40px; /* adjust height as needed */
+    height: 40px;
 }
 
 .logo-desc-container .logo-desc {
@@ -122,6 +122,11 @@ a {
     background: linear-gradient(90deg, #2d2d2d, #212121);
     width: min(90%, 850px);
     border-radius: 12px;
+    transition: ease 0.2s;
+}
+
+.project-entry:hover {
+    opacity: 0.8;
 }
 
 .project-image {
@@ -134,35 +139,34 @@ a {
 .project-textbox {
     display: flex;
     flex-direction: column;
+    margin-left: 12px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+    margin-top: 4px;
 }
 
 .project-title {
     color: rgb(233, 233, 233);
     font-weight: bolder;
-    margin-top: 4px;
-    margin-left: 12px;
-    margin-right: 4px;
     font-size: 28px;
 }
 
 .project-desc {
     color: rgb(192, 192, 192);
-    margin-left: 12px;
     margin-right: 12px;
 }
 
 .project-link {
     text-decoration: none;
     color: inherit;
-    display: contents; /* allows the children to keep their structure */
+    display: contents;
 }
 
 .project-properties {
     display: flex;
+    flex-wrap: wrap;   /* allow items to wrap downwards */
     gap: 6px;
     margin-top: auto;
-    margin-bottom: 4px;
-    margin-left: 12px;
 }
 
 .project-property-entry {
@@ -170,6 +174,7 @@ a {
     font-family: "Poppins";
     font-weight: bold;
     border-radius: 4px;    
+    width: min-content;
     padding-left: 4px;
     padding-right: 4px;
     background-color: rgba(255, 255, 255, 0.689);
@@ -178,39 +183,39 @@ a {
 
 /* COLORS */
 .color-java {
-    background-color: rgba(255, 146, 4, 0.689);
+    background-color: rgba(255, 146, 4, 0.5);
     border-color: rgb(255, 146, 4); 
 }
 
 .color-javascript {
-    background-color: rgba(226, 255, 4, 0.689);
-    border-color: rgb(226, 255, 4); 
+    background-color: rgba(236, 255, 30, 0.5);
+    border-color: rgb(236, 255, 30); 
 }
 
 .color-cpp {
-    background-color: rgba(4, 113, 255, 0.689);
+    background-color: rgba(4, 113, 255, 0.5);
     border-color: rgb(4, 113, 255); 
 }
 
 .color-minecraft {
-    background-color: rgba(0, 255, 0, 0.689);
-    border-color: rgb(0, 255, 0);
+    background-color: rgba(27, 237, 27, 0.5);
+    border-color: rgb(27, 237, 27);
 }
 
 .color-discordjs {
-    background-color: rgb(88, 101, 242);
-    border-color: rgb(88, 101, 242, 0.689);
+    background-color: rgb(88, 101, 242, 0.5);
+    border-color: rgb(88, 101, 242);
 }
 
 .color-socketio {
-    color: black;
-    background-color: rgb(192, 192, 192);
-    border-color: rgb(192, 192, 192, 0.689);
+    color: white;
+    background-color: rgb(192, 192, 192, 0.5);
+    border-color: rgb(192, 192, 192);
 }
 
 .color-sfml {
-    background-color: rgb(156, 222, 72);
-    border-color: rgb(156, 222, 72, 0.689);
+    background-color: rgb(156, 222, 72, 0.5);
+    border-color: rgb(156, 222, 72);
 }
 
 .footer-text {
