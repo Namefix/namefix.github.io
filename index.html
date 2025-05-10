@@ -14,9 +14,15 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="./img/logo.png">
     <script src="./index.js" defer></script>
+    <script src="./minigame.js" defer></script>
     <title>Namefix</title>
 </head>
 <body>
+    <canvas id="game"></canvas>
+    <div class="game-infobox hide">
+        <span>Dodge the rockets as long as you can. WASD movement</span>
+        <button onclick="okletsstartthegame()">GO! and don't show me again</button>
+    </div>
     <div class="center-box">
         <div class="profile-box">
             <img title="a bad choice..." class="logo" src="./img/logo.png">

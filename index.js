@@ -6,8 +6,10 @@ let speedMul = 1;
 const logoDescs = document.querySelectorAll('.logo-desc-container .logo-desc');
 
 let minigameStatus = false;
+let readMinigameInstruction = false;
 let hideClasses = [".logo-desc-container", ".title-projects", ".projects-box", ".socials-box", ".footer-text"];
 const logo = document.querySelector(".logo");
+const minigameInstruction = document.querySelector(".game-infobox");
 
 function startup() {
     if (logoDescs) {
@@ -56,10 +58,30 @@ function draw(timestamp) {
 requestAnimationFrame(draw);
 
 logo.addEventListener("click", e => {
+    toggleMinigameStatus();
+});
+
+function toggleMinigameStatus() {
+    if(!readMinigameInstruction) {
+        minigameInstruction.classList.remove("hide");
+        hideClasses.forEach(cls => {
+            document.querySelectorAll(cls).forEach(i => i.classList.add("hide"));
+        })
+        return;
+    }
+
     minigameStatus = !minigameStatus;
 
     hideClasses.forEach(cls => {
-        console.log(cls)
         document.querySelectorAll(cls).forEach(i => minigameStatus ? i.classList.add("hide") : i.classList.remove("hide"));
     })
-});
+
+    if(minigameStatus) startGame();
+    else endGame();
+}
+
+function okletsstartthegame() {
+    readMinigameInstruction = true;
+    minigameInstruction.classList.add("hide");
+    toggleMinigameStatus();
+}
