@@ -29,9 +29,14 @@ a {
 
 .profile-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 12px;
+}
+
+.profile-box-texts {
+    display: flex;
+    flex-direction: column;
 }
 
 .projects-box {
@@ -48,10 +53,10 @@ a {
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 164px;
+    height: 164px;
     border-radius: 10%;
-    margin-top: 8px;
+    margin-top: 16px;
     transition: ease 0.5s;
     cursor: pointer;
 }
@@ -80,12 +85,15 @@ a {
 .logo-desc-container {
     position: relative;
     height: 40px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
 }
 
 .logo-desc-container .logo-desc {
     position: absolute;
     width: max-content;
-    transform: translate(-50%, 0);
 }
 
 .logo-desc-container .logo-desc * {
@@ -105,7 +113,6 @@ a {
 .link-icon {
     color: white;
     font-size: 32px;
-    margin-top: 32px;
 }
 
 .title-projects {
